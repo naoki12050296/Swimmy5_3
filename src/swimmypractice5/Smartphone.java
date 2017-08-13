@@ -30,7 +30,7 @@ public class Smartphone {
 		return Kind;
 	}
 	//OS情報のsetterメソッド
-	public void setKind() {
+	public void inputAndSetKind() {
 		System.out.println("OSを選択してください");
 		System.out.println("0:iOS 1:Android");
 		int Kind = new java.util.Scanner(System.in).nextInt();
@@ -42,7 +42,7 @@ public class Smartphone {
 				}
 				else {
 					System.out.println("OS情報が不正です");
-					setKind();
+					inputAndSetKind();
 				}
 		System.out.println("OS"+this.Kind+"がセットされました");
 
@@ -53,7 +53,7 @@ public class Smartphone {
 		return Cpu;
 	}
 	//CPU情報のsetterメソッド
-	public void setCpu() {
+	public void inputAndSetCpu() {
 		System.out.println("CPUを入力してください");
 		String Cpu = new java.util.Scanner(System.in).nextLine();
 		this.Cpu = Cpu;
@@ -65,7 +65,7 @@ public class Smartphone {
 		return Ram;
 	}
 	//RAM情報のsetterメソッド
-	public void setRam() {
+	public void inputAndSetRam() {
 		System.out.println("RAMを入力してください");
 		int Ram = new java.util.Scanner(System.in).nextInt();
 		this.Ram = Ram;
@@ -77,7 +77,7 @@ public class Smartphone {
 		return Rom;
 	}
 	//ROM情報のgetterメソッド
-	public void setRom() {
+	public void inputAndSetRom() {
 		System.out.println("ROMを入力してください");
 		int Rom = new java.util.Scanner(System.in).nextInt();
 		this.Rom = Rom;

@@ -14,16 +14,16 @@ public class Main {
 		//Iphone7.tell(6255);
 
 		//CPUをセットするメソッドを呼び出し
-		Iphone7.setCpu();
+		Iphone7.inputAndSetCpu();
 
 		//CPUをセットするメソッドを呼び出し（例外処理発生）
 		//Iphone7.setCpu(null);
 
 		//RAMをセット
-		Iphone7.setRam();
+		Iphone7.inputAndSetRam();
 
 		//ROMをセット
-		Iphone7.setRom();
+		Iphone7.inputAndSetRom();
 
 		//音楽DLメソッドをオーバーライド
 		Iphone7.music();
@@ -37,13 +37,13 @@ public class Main {
 		Smartphone Galaxy = new Android();
 
 		//CPU情報をセット
-		Galaxy.setCpu();
+		Galaxy.inputAndSetCpu();
 
 		//RAMをセット
-		Galaxy.setRam();
+		Galaxy.inputAndSetRam();
 
 		//ROMをセット
-		//Galaxy.setRom();
+		//Galaxy.inputAndSetRom();
 
 		//音楽DLメソッドをオーバーライド（ROMをセットしていないので例外発生）
 		Galaxy.music();
