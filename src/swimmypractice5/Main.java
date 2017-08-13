@@ -16,9 +16,6 @@ public class Main {
 		//CPUをセットするメソッドを呼び出し
 		Iphone7.inputAndSetCpu();
 
-		//CPUをセットするメソッドを呼び出し（例外処理発生）
-		//Iphone7.setCpu(null);
-
 		//RAMをセット
 		Iphone7.inputAndSetRam();
 
