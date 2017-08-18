@@ -84,10 +84,13 @@ public class Smartphone {
 		System.out.println("ROM"+Rom+"がセットされました");
 	}
 
+	//メールを送るメソッド
+		public void sendMail() throws CheckException{
+		}
+
 	//音楽DLするメソッド（何もしない）
 	public void music() throws CheckException  {
 		}
-
 
 	//音声通話のメソッド（例外チェック込み）
 	public void tell(int countrycode,String phonenumber) throws CheckException{
@@ -117,5 +120,6 @@ public class Smartphone {
 			throw new NotRomInfoException();
 		}
 	}
+
 	}
 
