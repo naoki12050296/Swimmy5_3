@@ -7,46 +7,52 @@ public class Main {
 
 	try {
 
-		//Iphoneのインスタンスを生成（同時にOSを設定し、名前を入力する）
-		Smartphone Iphone7 = new Iphone();
+		//携帯ショップのインスタンスを生成
+		MobileShop shop = new MobileShop();
 
-		//LINE電話メソッドを呼び出し（例外処理発生）
-		//Iphone7.tell(6255);
+		//Iphoneの機種を選択し、名前を設定
+		Iphone iphone = shop.choiceIphone();
 
 		//CPUをセットするメソッドを呼び出し
-		Iphone7.inputAndSetCpu();
+		iphone.inputAndSetCpu();
 
 		//RAMをセット
-		Iphone7.inputAndSetRam();
+		iphone.inputAndSetRam();
 
 		//ROMをセット
-		Iphone7.inputAndSetRom();
+		iphone.inputAndSetRom();
+
+		//選ばれた機種に応じたメールを送信する（ポリモーフィズム）
+		iphone.sendMail();
 
 		//音楽DLメソッドをオーバーライド
-		Iphone7.music();
+		iphone.music();
 
 		//LINE電話メソッドを呼び出し
-		Iphone7.tell(6255);
+		iphone.tell(6255);
 
 
 
-		//Androidインスタンスを生成（同時にOSを設定し、名前を入力する）
-		Smartphone Galaxy = new Android();
+		//androidの機種を選択し、名前を設定
+		Android android = shop.choiceAndroid();
 
 		//CPU情報をセット
-		Galaxy.inputAndSetCpu();
+		android.inputAndSetCpu();
 
 		//RAMをセット
-		Galaxy.inputAndSetRam();
+		android.inputAndSetRam();
 
 		//ROMをセット
-		//Galaxy.inputAndSetRom();
+		//phone.inputAndSetRom();
+
+		//選ばれた機種に応じたメールを送信する（ポリモーフィズム）
+		android.sendMail();
 
 		//音楽DLメソッドをオーバーライド（ROMをセットしていないので例外発生）
-		Galaxy.music();
+		android.music();
 
 		//音声通話メソッドを呼び出し
-		Galaxy.tell(80, "090-1234-5678");
+		android.tell(80, "090-1234-5678");
 
 	}
 
