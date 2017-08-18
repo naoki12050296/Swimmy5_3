@@ -13,6 +13,7 @@ public class Android extends Smartphone{
 
 
 	//コンストラクタ２
+
 	public Android(String aName) {
 		super(SmartphoneKind.Android,aName);
 	}
