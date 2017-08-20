@@ -43,10 +43,7 @@ public class Main {
 		android.inputAndSetRam();
 
 		//ROMをセット
-		//phone.inputAndSetRom();
-
-		//選ばれた機種に応じたメールを送信する（ポリモーフィズム）
-		android.sendMail();
+		android.inputAndSetRom();
 
 		//音楽DLメソッドをオーバーライド（ROMをセットしていないので例外発生）
 		android.music();
