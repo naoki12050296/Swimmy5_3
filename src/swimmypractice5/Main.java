@@ -31,8 +31,6 @@ public class Main {
 		//LINE電話メソッドを呼び出し
 		iphone.tell(6255);
 
-
-
 		//androidの機種を選択し、名前を設定
 		Android android = shop.choiceAndroid();
 
