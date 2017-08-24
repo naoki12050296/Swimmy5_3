@@ -48,12 +48,7 @@ public class Main {
 
 			//音声通話メソッドを呼び出し
 			android.tell(80, "090-1234-5678");
-		}
-        
-        
-        
-        
-        catch(CheckException e) {
+		} catch(CheckException e) {
 			e.printStackTrace();
 		}
 	}
